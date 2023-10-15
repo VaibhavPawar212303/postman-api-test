@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install
-      - run: newman run Weather-API-Routes.postman_collection.json
+      - run: newman run Blog Routs.postman_collection.json
   
 
         

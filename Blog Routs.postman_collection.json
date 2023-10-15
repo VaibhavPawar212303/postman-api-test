@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "e67cbbda-4c4b-43e6-ab6b-1a14d54bd398",
+		"name": "Blog Routs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16102624",
+		"_collection_link": "https://blue-rocket-193704.postman.co/workspace/Dappled~9540e2ea-d886-430c-b075-c5ca28bb14e7/collection/16102624-e67cbbda-4c4b-43e6-ab6b-1a14d54bd398?action=share&source=collection_link&creator=16102624"
+	},
+	"item": [
+		{
+			"name": "https://postman-test-8v7a.onrender.com/api/user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validate response user message incorrect\", function () {\r",
+							"              var jsonData = pm.response.json();\r",
+							"              var dataLength = jsonData.message;\r",
+							"              console.log(dataLength);\r",
+							"              pm.expect(dataLength).to.eql(\"All Data\")\r",
+							"              });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-test-8v7a.onrender.com/api/user",
+					"protocol": "https",
+					"host": [
+						"postman-test-8v7a",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
