@@ -3,7 +3,6 @@ run-name: ${{ github.actor }} is executing the postman test suite
 on: [push]
 jobs:
   test:
-    runs-on: ubuntu-latest
     needs: server
     steps:
       - uses: actions/checkout@v2
