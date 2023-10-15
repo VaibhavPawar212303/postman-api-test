@@ -7,7 +7,7 @@
   },
   "item": [
     {
-      "name": "http://127.0.0.1:5000/api/user",
+      "name": "https://postman-test-8v7a.onrender.com/api/user",
       "event": [
         {
           "listen": "test",
@@ -28,7 +28,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://127.0.0.1:5000/api/user",
+          "raw": "https://postman-test-8v7a.onrender.com/api/user",
           "protocol": "http",
           "host": ["localhost"],
           "port": "5000",
@@ -38,7 +38,7 @@
       "response": []
     },
     {
-      "name": "http://127.0.0.1:5000/api/user",
+      "name": "https://postman-test-8v7a.onrender.com/api/user",
       "event": [
         {
           "listen": "test",
@@ -59,7 +59,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://127.0.0.1:5000/api/user",
+          "raw": "https://postman-test-8v7a.onrender.com/api/user",
           "protocol": "http",
           "host": ["localhost"],
           "port": "5000",
