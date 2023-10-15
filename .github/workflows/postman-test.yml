@@ -5,4 +5,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - run: npm install
       - run: newman run Weather-API-Routes.postman_collection.json
