@@ -1,9 +1,13 @@
 name: learn-postman-newman
 run-name: ${{ github.actor }} is executing the postman test suite
 on: [push]
-jobs:
-  test:
+jobs:     
+  server:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: npm install
       - run: newman run Weather-API-Routes.postman_collection.json
+  
+
+        
