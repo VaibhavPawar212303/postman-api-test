@@ -12,7 +12,7 @@ jobs:
     PassData:
     runs-on: ubuntu-latest
     steps:
-      needs: collection-Test
+    needs: collection-Test
       - uses: actions/checkout@v2
       - run: npm run PassDataToDb
      
