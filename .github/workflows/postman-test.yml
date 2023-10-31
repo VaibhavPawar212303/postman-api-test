@@ -2,13 +2,14 @@ name: learn-postman-newman
 run-name: ${{ github.actor }} is executing the postman test suite
 on: [push]
 jobs:     
-  server:
+  collection-Test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: npm install
       - run: newman run BlogRouts.postman_collection.json -r cli,json
-      - run: node passBuildDataToDb.js
+      - run: npm run PassDataToDb
+     
   
 
         
