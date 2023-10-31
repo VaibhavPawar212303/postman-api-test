@@ -1,0 +1,351 @@
+{
+  "collection": {
+    "_": {
+      "postman_id": "e67cbbda-4c4b-43e6-ab6b-1a14d54bd398",
+      "exporter_id": "16102624",
+      "collection_link": "https://blue-rocket-193704.postman.co/workspace/Dappled~9540e2ea-d886-430c-b075-c5ca28bb14e7/collection/16102624-e67cbbda-4c4b-43e6-ab6b-1a14d54bd398?action=share&source=collection_link&creator=16102624"
+    },
+    "item": [
+      {
+        "id": "1698c481-81b8-450f-ae55-a4fc853e354e",
+        "name": "https://postman-test-8v7a.onrender.com/api/user",
+        "request": {
+          "url": {
+            "protocol": "https",
+            "path": [
+              "api",
+              "user"
+            ],
+            "host": [
+              "postman-test-8v7a",
+              "onrender",
+              "com"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "GET"
+        },
+        "response": [],
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "6c3a0a9d-c5c5-4bc2-8bdc-cf3b798e5cad",
+              "type": "text/javascript",
+              "exec": [
+                "pm.test(\"Validate response user message incorrect\", function () {\r",
+                "              var jsonData = pm.response.json();\r",
+                "              var dataLength = jsonData.message;\r",
+                "              console.log(dataLength);\r",
+                "              pm.expect(dataLength).to.eql(\"All User Data\")\r",
+                "              });"
+              ],
+              "_lastExecutionId": "ded7ec98-669e-4019-a845-5f10866a64f7"
+            }
+          }
+        ]
+      }
+    ],
+    "event": [],
+    "variable": [],
+    "info": {
+      "_postman_id": "e67cbbda-4c4b-43e6-ab6b-1a14d54bd398",
+      "name": "Blog Routs",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+  },
+  "environment": {
+    "id": "c110da65-b751-4344-98fb-1c5ee136ec83",
+    "values": []
+  },
+  "globals": {
+    "id": "f8208349-36b7-4651-b3b9-74df4f153e44",
+    "values": []
+  },
+  "run": {
+    "stats": {
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "scripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseAverage": 32477,
+      "responseMin": 32477,
+      "responseMax": 32477,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1698554553345,
+      "completed": 1698554586071
+    },
+    "executions": [
+      {
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "c78f529e-c80a-40dc-b615-c61e109fffbc",
+          "httpRequestId": "b1f6bc92-3787-4df8-9cc9-6af31e786fb4"
+        },
+        "item": {
+          "id": "1698c481-81b8-450f-ae55-a4fc853e354e",
+          "name": "https://postman-test-8v7a.onrender.com/api/user",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                "api",
+                "user"
+              ],
+              "host": [
+                "postman-test-8v7a",
+                "onrender",
+                "com"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6c3a0a9d-c5c5-4bc2-8bdc-cf3b798e5cad",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Validate response user message incorrect\", function () {\r",
+                  "              var jsonData = pm.response.json();\r",
+                  "              var dataLength = jsonData.message;\r",
+                  "              console.log(dataLength);\r",
+                  "              pm.expect(dataLength).to.eql(\"All User Data\")\r",
+                  "              });"
+                ],
+                "_lastExecutionId": "ded7ec98-669e-4019-a845-5f10866a64f7"
+              }
+            }
+          ]
+        },
+        "request": {
+          "url": {
+            "protocol": "https",
+            "path": [
+              "api",
+              "user"
+            ],
+            "host": [
+              "postman-test-8v7a",
+              "onrender",
+              "com"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "8bdfa9c8-3ebc-4638-aaa0-c7f1838a827d",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "postman-test-8v7a.onrender.com",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            }
+          ],
+          "method": "GET"
+        },
+        "response": {
+          "id": "83c9a3a7-c999-4241-a5f9-c68dbaf70971",
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 29 Oct 2023 04:43:05 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "CF-Ray",
+              "value": "81d8c0ae3ceb12ab-MRS"
+            },
+            {
+              "key": "CF-Cache-Status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1b-GlrMUx8XEZY0AtaYGg5WN7jxH10\""
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "rndr-id",
+              "value": "4933faa5-e92f-46f7"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              109,
+              101,
+              115,
+              115,
+              97,
+              103,
+              101,
+              34,
+              58,
+              34,
+              65,
+              108,
+              108,
+              32,
+              85,
+              115,
+              101,
+              114,
+              32,
+              68,
+              97,
+              116,
+              97,
+              34,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 32477,
+          "responseSize": 27
+        },
+        "id": "1698c481-81b8-450f-ae55-a4fc853e354e",
+        "assertions": [
+          {
+            "assertion": "Validate response user message incorrect",
+            "skipped": false
+          }
+        ]
+      }
+    ],
+    "transfers": {
+      "responseTotal": 27
+    },
+    "failures": [],
+    "error": null
+  }
+}
