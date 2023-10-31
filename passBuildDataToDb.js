@@ -1,6 +1,6 @@
 const testFolder = "./newman/";
 const fs = require("fs");
-const url = "http://localhost:8000/api/build/createbuild";
+const url = "https://dappled-blog-api.onrender.com/api/build/createbuild";
 fs.readdir(testFolder, (err, files) => {
   console.log(files);
   fs.readFile(
