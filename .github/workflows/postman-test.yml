@@ -9,11 +9,7 @@ jobs:
       - run: npm install
       - run: newman run BlogRouts.postman_collection.json -r cli,json
       - run: npm run PassDataToDb
-  PassData:
-    runs-on: ubuntu-latest
-    steps:
-    needs: collection-Test
-      - run: npm run PassDataToDb
+
      
   
 

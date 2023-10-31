@@ -18,7 +18,7 @@
 							"              var jsonData = pm.response.json();\r",
 							"              var dataLength = jsonData.message;\r",
 							"              console.log(dataLength);\r",
-							"              pm.expect(dataLength).to.eql(\"All Data\")\r",
+							"              pm.expect(dataLength).to.eql(\"All User Data\")\r",
 							"              });"
 						],
 						"type": "text/javascript"
