@@ -1,6 +1,6 @@
 const testFolder = "./newman/";
 const fs = require("fs");
-const url = "https://dappled-blog-api.onrender.com/api/build/createbuild";
+const url = "https://dashboard-api-backhend-production.up.railway.app/api/build/createbuild";
 fs.readdir(testFolder, (err, files) => {
   console.log(files);
   fs.readFile(
@@ -14,7 +14,7 @@ fs.readdir(testFolder, (err, files) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          project_id: 2,
+          project_id: 1,
           project_type: "Postman_API Test",
           BuildData: collectionTestData,
         }),
