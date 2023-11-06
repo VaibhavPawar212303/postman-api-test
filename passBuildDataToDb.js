@@ -14,7 +14,7 @@ fs.readdir(testFolder, (err, files) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          project_id: 1,
+          project_id: 2,
           project_type: "Postman_API Test",
           BuildData: collectionTestData,
         }),
